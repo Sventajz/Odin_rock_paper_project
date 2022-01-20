@@ -25,6 +25,46 @@ else
     computerChoice= "scissor";
     console.log(computerChoice)
 }
+return computerChoice
 }
 
 computerPlay();
+let userSelection;
+function userQuestion()
+{
+
+    let answer = prompt("please entet your choice \n1. rock \n2. paper \n3. scissor");
+    if (answer == 1)
+    {
+        userSelection= "rock";
+        console.log(userSelection)
+    }
+else if (answer == 2)
+{
+    userSelection= "paper";
+    console.log(userSelection)
+}
+else
+{
+    userSelection= "scissor";
+    console.log(userSelection)
+}
+return userSelection;
+}
+userQuestion();
+console.log("hi im returning user selection",userSelection)
+
+function playRound(user,computer)
+{  
+    user=userSelection;
+    computer=computerChoice;
+    if (user==computer)
+    {console.log("its a tie")}
+    else if (user=="paper" && computer=="rock")
+    console.log("player wins");
+    else if (user=="rock" && computer=="scissor")
+    console.log("player wins");
+    else if (user=="scissor" && computer=="rock")
+    console.log("computer wins");
+}
+playRound();
