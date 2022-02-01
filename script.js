@@ -106,6 +106,11 @@ function game()
         console.log("playes has",playerPoints,"points");
         console.log("computer has",computerPoints,"points");
         randomIntFromInterval(1,3);
+        if (playerPoints === 3 || computerPoints === 3)
+        {
+            console.log("game over");
+            break;
+        }
     }
 }
 
