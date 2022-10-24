@@ -1,1 +1,1 @@
-Hello this is my rock paper scissor project.
+Rock paper scissor project where player plays against the computer inside the inspect element console.
