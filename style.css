@@ -10,6 +10,7 @@
   justify-content: center;
   position: absolute;
   top: 50%;
+  margin: auto;
 }
 
 .rps-container ul li {
@@ -28,13 +29,17 @@
   color: red;
 }
 
-.computer-choice{
-    background-color: black;
-     width: 100%;
-     color: white;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    margin: auto;
+.computer-choice {
+  background-color: black;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 60%;
+  margin: auto;
+}
+
+.computer-choice p {
+  margin: 20px;
 }
