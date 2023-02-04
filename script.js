@@ -1,13 +1,12 @@
-console.log("hello world");
 let userSelection;
 let computerChoice;
 let playerPoints = 0;
 let computerPoints = 0;
-const rockbtn = document.getElementsByClassName("rockBtn");
-const paperbtn = document.getElementsByClassName("paperBtn");
-const scissorbtn = document.getElementsByClassName("scissorBtn");
-const compchoice = document.querySelector("#comp");
-console.log(compchoice);
+const rockbtn = document.getElementsByClassName("card1");
+const paperbtn = document.getElementsByClassName("card2");
+const scissorbtn = document.getElementsByClassName("card3");
+
+console.log(rockbtn);
 
 //random int for computer choice
 function randomIntFromInterval(min, max) {

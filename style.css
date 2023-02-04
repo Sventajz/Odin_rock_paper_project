@@ -1,45 +1,28 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
-.rps-container {
-  width: 100%;
+.container-choices {
   background-color: aqua;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  margin: auto;
+  height: 100%;
 }
 
-.rps-container ul li {
-  display: inline;
-}
-
-.rps-container ul {
-  padding: 25px;
-}
-
-.rps-container li {
-  margin: 50px;
-}
-
-.rockBtn {
-  color: red;
-}
-
-.computer-choice {
-  background-color: black;
+.container-scoreboard {
   width: 100%;
+  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 60%;
-  margin: auto;
 }
 
-.computer-choice p {
+.container-scoreboard p {
   margin: 20px;
+}
+
+.card-text {
+  text-align: center;
 }
