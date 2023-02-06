@@ -14,59 +14,56 @@
     <link rel="stylesheet" href="stars.css" />
   </head>
   <body style="background-color: black">
-    <div class="bg-animation">
+    <!-- <div class="bg-animation">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
       <div id="stars4"></div>
-    </div>
+    </div> -->
 
     <!--NAVBAR SECION-->
     <div class="nav-bar">
       <h1>ROCK PAPER SCISSOR IN SPACE</h1>
     </div>
+
     <!--MAIN SECTION-->
 
     <div class="jebemtiselo">
       <div class="container-sm">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card1">
-              <div
-                class="card h-100"
-                style="background-color: white; opacity: 35%"
-              >
-                <img
-                  src="images/rock.svg"
-                  class="card-img-top"
-                  alt="Hollywood Sign on The Hill"
-                  style="max-height: 100px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">ROCK</h5>
-                </div>
+          <div class="col card1">
+            <div
+              class="card h-100"
+              style="background-color: white; opacity: 35%"
+            >
+              <img
+                src="images/rock.svg"
+                class="card-img-top"
+                alt="Hollywood Sign on The Hill"
+                style="max-height: 100px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">ROCK</h5>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card2">
-              <div
-                class="card h-100"
-                style="background-color: white; opacity: 35%"
-              >
-                <img
-                  src="images/papers.svg"
-                  class="card-img-top"
-                  alt="Palm Springs Road"
-                  style="max-height: 100px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">PAPER</h5>
-                </div>
+          <div class="col card2">
+            <div
+              class="card h-100"
+              style="background-color: white; opacity: 35%"
+            >
+              <img
+                src="images/papers.svg"
+                class="card-img-top"
+                alt="Palm Springs Road"
+                style="max-height: 100px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">PAPER</h5>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col card3">
             <div
               class="card h-100"
               style="background-color: white; opacity: 35%"
@@ -89,11 +86,19 @@
           <div class="container-scoreboard">
             <p>Player Score: <span id="pla"></span></p>
             <p>Computer Score: <span id="comp"></span></p>
+            <span class="choice1" style="color: white"></span>
           </div>
         </div>
       </div>
     </div>
-
+    <button class="play-again">Fight Again!</button>
+    <!--DIV FOR DOM MANIPULATION-->
+    <div class="element-container">
+      <div class="element">
+        <h2>computer choice</h2>
+        <div class="choice2"></div>
+      </div>
+    </div>
     <!--FOOTER-->
     <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
@@ -101,6 +106,7 @@
         © 2020 Copyright:
         <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
       </div>
+
       <!-- Copyright -->
     </footer>
   </body>
