@@ -77,8 +77,8 @@ function playRound(user, computer) {
 }
 
 function updateScoreBoard(playerPoints, computerPoints) {
-  document.querySelector("#comp").textContent = computerPoints;
-  document.querySelector("#pla").textContent = playerPoints;
+  document.querySelector("#computerScore").textContent = computerPoints;
+  document.querySelector("#playerScore").textContent = playerPoints;
 }
 computerPlay();
 console.log("computer choice was:  ", computerChoice);
