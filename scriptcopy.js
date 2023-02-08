@@ -57,7 +57,6 @@ function playRound(user, computer) {
   ) {
     roundWinner = "player wins";
     userPoints = userPoints + 1;
-    console.log("playerwins");
   } else if (
     (computer == "rock" && user == "scissor") ||
     (computer == "paper" && user == "rock") ||
@@ -65,7 +64,6 @@ function playRound(user, computer) {
   ) {
     roundWinner = "computer wins";
     computerPoints = computerPoints + 1;
-    console.log("computerwins");
   }
   return roundWinner, userPoints, computerPoints;
 }
@@ -91,12 +89,10 @@ function endGame() {
       winner.textContent = "YOU WON THE GAME!";
       lore.textContent =
         "It was a bloody fight, but you pulled trough and saved humanity in these troubling times. BRAVO! You deserve all the fame";
-      console.log("player won game");
     } else if (userPoints < computerPoints) {
       winner.textContent = "ALIENS WON THE GAME!";
       lore.textContent =
         "You should be ashamed of yourself. The fate of manking was on your shoulders and you let us down. Now we are bound to eternaly play rock paper scissors with aliens until we all die.";
-      console.log("computer won game");
     }
 
     var blur = document.querySelector(".wholeScreen");
@@ -129,13 +125,10 @@ function playGame() {
   rpsChoice.forEach((choice) => {
     choice.addEventListener("click", () => {
       if (choice.classList.contains("card1")) {
-        console.log("player chose rock");
         userSelection = "rock";
       } else if (choice.classList.contains("card2")) {
-        console.log("player chose paper");
         userSelection = "paper";
       } else {
-        console.log("player chose scissor");
         userSelection = "scissor";
       }
       element.style.visibility = "visible";
@@ -143,7 +136,7 @@ function playGame() {
       computerPlay();
       compImageDisplay();
       elemcont.textContent = "Your choice was: " + userSelection;
-      console.log("round number is: ", rounds);
+
       playRound(userSelection, computerChoice);
       updateScoreBoard(userPoints, computerPoints);
       endGame();
